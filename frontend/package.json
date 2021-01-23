@@ -2,7 +2,7 @@
   "scripts": {
     "dev": "BACKEND_URL=\"http://localhost:9292\" snowpack dev",
     "dev:prod": "BACKEND_URL=\"https://hgfiy.kube.zero.haus\" snowpack dev",
-    "start": "concurrently \"yarn dev\" \"cd .. && bundle exec rackup\"",
+    "start": "concurrently  \"cd .. && bundle exec rackup -o 0\" \"yarn dev\"",
     "build": "snowpack build"
   },
   "dependencies": {

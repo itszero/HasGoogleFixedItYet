@@ -6,6 +6,7 @@ const proxy = httpProxy.createServer({
   secure: false,
   changeOrigin: true
 });
+proxy.on('error', (err) => { console.log('proxy error occured: ', err) })
 
 module.exports = {
   mount: {
@@ -22,6 +23,8 @@ module.exports = {
     'target': 'es2018'
   },
   routes: [
-    { src: '/i/.*', dest: (req, res) => proxy.web(req, res) },
+    {
+      src: '/i/.*', dest: (req, res) => proxy.web(req, res)
+    },
   ]
 };

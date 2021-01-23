@@ -7,7 +7,7 @@ This website tracks when Google Translate would fix the `zh-TW` translations. Se
 ## Backend Setup
 
 You will need to have Ruby installed and postgresql/sqlite3 library, then run `bundle` to install dependencies. You can
-start both frontend and backend of the project by going to the `frontend` directory and run `yarn dev`.
+start both frontend and backend of the project by going to the `frontend` directory and run `yarn start`.
 
 ## Frontend Development
 
