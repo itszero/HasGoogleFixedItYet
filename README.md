@@ -11,4 +11,4 @@ start both frontend and backend of the project by going to the `frontend` direct
 
 ## Frontend Development
 
-You can use work on the frontend locally with production data by running `yarn dev:prod` in the `frontend` directory.
+You can work on the frontend locally with production data by running `yarn dev:prod` in the `frontend` directory.
