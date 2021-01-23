@@ -23,6 +23,7 @@
   .data {
     display: grid;
     grid-template-columns: auto auto;
+    grid-gap: 10px;
   }
 
   @media (max-width: 600px) {
