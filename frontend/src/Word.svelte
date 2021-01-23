@@ -34,15 +34,7 @@
     <div class="main">
       {word.isFixed ? '✅' : '🚫'}
       {word['english_word']} → {word['zhtw_word']}
-      {#if !word.isFixed}({word['correct_zhtw_word']}){/if}<br />
-      最後更新：{formatDistance(
-        parseJSONDate(word['last_seen_at']),
-        new Date(),
-        {
-          addSuffix: true,
-          locale: zhTW,
-        },
-      )}
+      {#if !word.isFixed}({word['correct_zhtw_word']}){/if}
     </div>
     <div class="expander {expanded ? 'expanded' : ''}">▼</div>
   </div>
