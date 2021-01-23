@@ -8,7 +8,7 @@
 <div class="header_bg" />
 
 <div class="header">
-  <table>
+  <table class="hero">
     <tr class="title_row_zhtw">
       <td align="right">台灣中文<br />zh-TW</td>
       <td class="title_zhtw">Google 翻譯修好了沒？</td>
@@ -93,5 +93,37 @@
     top: 63px;
     left: 140px;
     color: #1a67d2;
+  }
+
+  @media (max-width: 600px) {
+    .header_bg {
+      height: 132px;
+    }
+
+    .hero {
+      border: 1px solid #000;
+      box-shadow: 0 10px 10px #555;
+      margin-bottom: 10px;
+    }
+
+    .icon_to {
+      display: none;
+    }
+
+    .hero td:first-of-type {
+      width: 100px;
+    }
+
+    .title_zhtw {
+      font-size: 18pt;
+    }
+
+    .title_en {
+      font-size: 12pt;
+    }
+
+    .answer_note {
+      display: block;
+    }
   }
 </style>

@@ -20,4 +20,14 @@
 </div>
 
 <style>
+  .data {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  @media (max-width: 600px) {
+    .data {
+      grid-template-columns: auto;
+    }
+  }
 </style>

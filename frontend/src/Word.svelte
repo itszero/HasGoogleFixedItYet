@@ -44,7 +44,7 @@
         },
       )}
     </div>
-    <div class="expander {expanded ? 'expanded' : ''}">↓</div>
+    <div class="expander {expanded ? 'expanded' : ''}">▼</div>
   </div>
   {#if expanded && wordHistory}
     <div class="history">
@@ -113,7 +113,8 @@
 
   .main {
     flex-grow: 1;
-    flex-shrink: 0;
+    flex-shrink: 1;
+    margin-right: 10px;
   }
 
   .expander {
