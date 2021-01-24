@@ -12,10 +12,6 @@
   })
 </script>
 
-<svelte:head>
-  <title>Google 翻譯修好了沒？</title>
-</svelte:head>
-
 <div class="root">
   <Header words={data} />
 
@@ -42,10 +38,11 @@
   <Words words={data} />
 
   <footer>
-    這個網站由 <a href="https://twitter.com/itszero" target="_blank">傑洛</a>
+    這個網站由 <a href="https://twitter.com/itszero" target="_blank" rel="noopener">傑洛</a>
     製作 | 可以在 Github 找到<a
       href="https://github.com/itszero/hasgooglefixedityet"
-      target="_blank">原始碼</a
+      target="_blank"
+      rel="noopener">原始碼</a
     > | 2021-
   </footer>
 </div>
