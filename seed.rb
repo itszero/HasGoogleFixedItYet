@@ -30,7 +30,8 @@ WORDS = {
   "taxi": "計程車",
   "message": "訊息",
   "default": "預設",
-  "printer": "印表機"
+  "printer": "印表機",
+  "yogurt": "優格"
 }
 
 words = DB[:words]
