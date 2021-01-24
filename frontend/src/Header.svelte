@@ -1,7 +1,7 @@
 <script>
   export let words
 
-  $: fixedCount = (words || []).filter((word) => word.isFixed).length
+  $: fixedCount = (words || []).filter((word) => word.is_fixed).length
   $: totalCount = (words || []).length
 </script>
 

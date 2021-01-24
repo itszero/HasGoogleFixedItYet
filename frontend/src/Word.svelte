@@ -32,9 +32,9 @@
 >
   <div class="summary">
     <div class="main">
-      {word.isFixed ? '✅' : '🚫'}
+      {word.is_fixed ? '✅' : '🚫'}
       {word['english_word']} → {word['zhtw_word']}
-      {#if !word.isFixed}({word['correct_zhtw_word']}){/if}
+      {#if !word.is_fixed}({word['correct_zhtw_word']}){/if}
     </div>
     <div class="expander {expanded ? 'expanded' : ''}">▼</div>
   </div>

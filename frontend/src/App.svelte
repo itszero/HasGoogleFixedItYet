@@ -9,19 +9,6 @@
     const resp = await fetch('/i/data')
     const json = await resp.json()
     data = json
-      .map((word) => ({
-        ...word,
-        isFixed: word['zhtw_word'] === word['correct_zhtw_word'],
-      }))
-      .sort((a, b) => {
-        const aIsFixed = a.isFixed ? 1 : 0
-        const bIsFixed = b.isFixed ? 1 : 0
-        if (aIsFixed !== bIsFixed) {
-          return aIsFixed > bIsFixed
-        } else {
-          return a['english_word'] < b['english_word']
-        }
-      })
   })
 </script>
 
