@@ -19,7 +19,11 @@ SELECT
   a.correct_zhtw_word,
   c.zhtw_word,
   c.first_seen_at,
-  c.last_seen_at
+  c.last_seen_at,
+  CASE
+  WHEN a.correct_zhtw_word = c.zhtw_word THEN 1
+  ELSE 0
+  END AS is_fixed
 FROM words a
 INNER JOIN translations c ON a.english_word = c.english_word
 INNER JOIN (
@@ -27,6 +31,7 @@ INNER JOIN (
   FROM translations
   GROUP BY english_word
 ) b ON c.english_word = b.english_word AND c.last_seen_at = b.last_seen_at
+ORDER BY is_fixed ASC, a.english_word ASC
                 """.strip].all.to_json
   end
 
