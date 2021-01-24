@@ -31,7 +31,7 @@ INNER JOIN (
   FROM translations
   GROUP BY english_word
 ) b ON c.english_word = b.english_word AND c.last_seen_at = b.last_seen_at
-ORDER BY is_fixed ASC, a.english_word ASC
+ORDER BY is_fixed ASC, lower(a.english_word) ASC
                 """.strip].all.to_json
   end
 
