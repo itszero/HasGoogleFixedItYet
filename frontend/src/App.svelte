@@ -53,7 +53,7 @@
 <style>
   @font-face {
     font-family: 'jf-openhuninn';
-    src: url(/assets/jf-openhuninn-1.1.ttf);
+    src: url(https://cdn.isgooglefixed.tw/jf-openhuninn.woff2) format("woff2");
     font-display: swap;
   }
 
