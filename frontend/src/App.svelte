@@ -54,6 +54,7 @@
   @font-face {
     font-family: 'jf-openhuninn';
     src: url(/assets/jf-openhuninn-1.1.ttf);
+    font-display: swap;
   }
 
   :global(*) {
