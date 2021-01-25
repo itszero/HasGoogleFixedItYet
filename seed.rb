@@ -31,7 +31,9 @@ WORDS = {
   "message": "訊息",
   "default": "預設",
   "printer": "印表機",
-  "yogurt": "優格"
+  "yogurt": "優格",
+  "plastic": "塑膠",
+  "guinea pig": "天竺鼠"
 }
 
 words = DB[:words]
