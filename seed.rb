@@ -33,7 +33,10 @@ WORDS = {
   "printer": "印表機",
   "yogurt": "優格",
   "plastic": "塑膠",
-  "guinea pig": "天竺鼠"
+  "guinea pig": "天竺鼠",
+  "college major": "大學主修",
+  "convenience store": "便利商店",
+  "rubik's cube": "魔術方塊"
 }
 
 words = DB[:words]
