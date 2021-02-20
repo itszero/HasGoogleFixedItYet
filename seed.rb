@@ -10,6 +10,7 @@ WORDS = {
   "CD": "光碟",
   "HD": "高畫質",
   "software": "軟體",
+  "hardware": "硬體",
   "computer memory": "電腦記憶體",
   "potato": "馬鈴薯",
   "instant noodles": "泡麵",
@@ -33,7 +34,13 @@ WORDS = {
   "printer": "印表機",
   "yogurt": "優格",
   "plastic": "塑膠",
-  "guinea pig": "天竺鼠"
+  "guinea pig": "天竺鼠",
+  "president Tsai": "蔡總統",
+  "uninstall": "解除安裝",
+  "icon": "圖示",
+  "program": "程式",
+  "motherboard": "主機板",
+  "laptop": "筆記型電腦"
 }
 
 words = DB[:words]
