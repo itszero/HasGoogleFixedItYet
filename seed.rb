@@ -10,6 +10,7 @@ WORDS = {
   "CD": "光碟",
   "HD": "高畫質",
   "software": "軟體",
+  "hardware": "硬體",
   "computer memory": "電腦記憶體",
   "potato": "馬鈴薯",
   "instant noodles": "泡麵",
@@ -36,7 +37,12 @@ WORDS = {
   "guinea pig": "天竺鼠",
   "college major": "大學主修",
   "convenience store": "便利商店",
-  "rubik's cube": "魔術方塊"
+  "rubik's cube": "魔術方塊",
+  "uninstall": "解除安裝",
+  "icon": "圖示",
+  "program": "程式",
+  "motherboard": "主機板",
+  "laptop": "筆記型電腦"
 }
 
 words = DB[:words]
