@@ -39,14 +39,13 @@
       Chinese (as used in Taiwan) for a while now. A lot of times the
       translation would sound like how Chinese is used in China instead. Google
       even claims some of those translations are "verified by community".
-      However, a quick check through Google Trends would reveal that their
+      However, a quick check through Google Trends would show that these
       translations would indeed rank pretty low among Taiwanese websites.
-      Therefore, I made this websites to track some examples of those cases and
-      hopefully nudge Google into fixing the translation for Traditional Chinese
-      (Taiwan).
+      Therefore, I made this websites to track some examples and hopefully nudge
+      Google into fixing the translation for Traditional Chinese (Taiwan).
     </p>
     <p>
-      NOTE: The Google Transalte menu only says "Chinese (Traditional)".
+      NOTE: The Google Translate menu only says "Chinese (Traditional)".
       However, if you pick the option, you will see the language code reflected
       in the URL is <code>zh-TW</code>, which means "Traditional Chinese as
       being used in Taiwan". The alternative option for Google to fix this
