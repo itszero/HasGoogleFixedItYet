@@ -17,6 +17,7 @@
 
   <h2>為什麼要製作這個網站？</h2>
   <div>
+    <div class="language-pill">台灣中文 zh-TW</div>
     <p>
       Google 翻譯已經好一陣子將台灣（語言代碼為 <code>zh-TW</code
       >）的翻譯改成各種中國常見的用法。Google
@@ -32,13 +33,37 @@
         >zh-Hant</code
       >。
     </p>
+    <div class="language-pill">美式英文 en-US</div>
+    <p>
+      Google Translate has not been accurately translating into Traditional
+      Chinese (as used in Taiwan) for a while now. A lot of times the
+      translation would sound like how Chinese is used in China instead. Google
+      even claims some of those translations are "verified by community".
+      However, a quick check through Google Trends would reveal that their
+      translations would indeed rank pretty low among Taiwanese websites.
+      Therefore, I made this websites to track some examples of those cases and
+      hopefully nudge Google into fixing the translation for Traditional Chinese
+      (Taiwan).
+    </p>
+    <p>
+      NOTE: The Google Transalte menu only says "Chinese (Traditional)".
+      However, if you pick the option, you will see the language code reflected
+      in the URL is <code>zh-TW</code>, which means "Traditional Chinese as
+      being used in Taiwan". The alternative option for Google to fix this
+      problem is to officially drop <code>zh-TW</code> support and switch to an
+      appropriate language code instead, such as <code>zh-Hant</code>.
+    </p>
   </div>
 
   <h2>單詞詳情</h2>
   <Words words={data} />
 
   <footer>
-    這個網站由 <a href="https://twitter.com/itszero" target="_blank" rel="noopener">傑洛</a>
+    這個網站由 <a
+      href="https://twitter.com/itszero"
+      target="_blank"
+      rel="noopener">傑洛</a
+    >
     製作 | 可以在 Github 找到<a
       href="https://github.com/itszero/hasgooglefixedityet"
       target="_blank"
@@ -50,7 +75,7 @@
 <style>
   @font-face {
     font-family: 'jf-openhuninn';
-    src: url(https://cdn.isgooglefixed.tw/jf-openhuninn.woff2) format("woff2");
+    src: url(https://cdn.isgooglefixed.tw/jf-openhuninn.woff2) format('woff2');
     font-display: swap;
   }
 
@@ -59,7 +84,9 @@
   }
 
   :global(body) {
-    font-family: 'jf-openhuninn';
+    font-family: 'jf-openhuninn', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+      Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+      sans-serif;
   }
 
   .root {
@@ -96,5 +123,14 @@
     color: red;
     margin-left: 5px;
     margin-right: 5px;
+  }
+
+  .language-pill {
+    padding: 5px 10px;
+    background-color: #1a67d2;
+    color: #fff;
+    border-radius: 20px;
+    display: inline-block;
+    font-size: 12px;
   }
 </style>

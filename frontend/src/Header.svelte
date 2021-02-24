@@ -97,7 +97,7 @@
 
   @media (max-width: 600px) {
     .header_bg {
-      height: 132px;
+      height: 112px;
     }
 
     .hero {
@@ -114,6 +114,10 @@
       width: 100px;
     }
 
+    .title_row_zhtw {
+      font-size: 11pt;
+    }
+
     .title_zhtw {
       font-size: 18pt;
     }
@@ -124,6 +128,10 @@
 
     .answer_note {
       display: block;
+    }
+
+    table td {
+      padding: 10px;
     }
   }
 </style>
