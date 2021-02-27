@@ -42,7 +42,8 @@ WORDS = {
   "icon": "圖示",
   "program": "程式",
   "motherboard": "主機板",
-  "laptop": "筆記型電腦"
+  "laptop": "筆記型電腦",
+  "pineapple": "鳳梨"
 }
 
 words = DB[:words]
