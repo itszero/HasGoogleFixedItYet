@@ -43,7 +43,8 @@ WORDS = {
   "program": "程式",
   "motherboard": "主機板",
   "laptop": "筆記型電腦",
-  "pineapple": "鳳梨"
+  "pineapple": "鳳梨",
+  "text": "文字,
 }
 
 words = DB[:words]
