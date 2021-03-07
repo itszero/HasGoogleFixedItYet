@@ -45,6 +45,7 @@ WORDS = {
   "laptop": "筆記型電腦",
   "pineapple": "鳳梨",
   "text": "文字",
+  "billiards": "撞球",
 }
 
 words = DB[:words]
