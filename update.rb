@@ -46,7 +46,7 @@ words.all.each do |word|
     )
   else
     puts "updating last seen for #{word[:english_word]} -> #{zhtw_word}"
-    translations.where(english_word: word[:english_word], zhtw_word: zhtw_word).update({
+    translations.where(id: last_entry[:id]).update({
       last_seen_at: DateTime.now
     })
   end
