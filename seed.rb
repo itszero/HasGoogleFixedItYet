@@ -54,6 +54,8 @@ WORDS = {
   "good morning": "早安",
   "transistor": "電晶體",
   "instant coffee": "即溶咖啡",
+  "Fed": "聯準會",
+  "P/E ratio": "本益比",
 }
 
 words = DB[:words]
