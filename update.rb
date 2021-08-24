@@ -27,6 +27,7 @@ def get_translation(word)
 end
 
 translations = DB[:translations]
+
 words = DB[:words]
 words.all.each do |word|
   zhtw_word = get_translation(word[:english_word])
@@ -34,6 +35,7 @@ words.all.each do |word|
   last_entry = translations
     .where(english_word: word[:english_word])
     .reverse_order(:last_seen_at)
+    .order_append(Sequel.desc(:id))
     .first
 
   if last_entry.nil? or (last_entry[:zhtw_word] != zhtw_word)
@@ -46,6 +48,7 @@ words.all.each do |word|
     )
   else
     puts "updating last seen for #{word[:english_word]} -> #{zhtw_word}"
+    puts last_entry
     translations.where(id: last_entry[:id]).update({
       last_seen_at: DateTime.now
     })
