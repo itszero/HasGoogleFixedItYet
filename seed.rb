@@ -47,6 +47,13 @@ WORDS = {
   "text": "文字",
   "billiards": "撞球",
   "protocol": "協定",
+  "roller coaster": "雲霄飛車",
+  "through": "透過",
+  "frames per second": "每秒影格數",
+  "cybercafe": "網咖",
+  "good morning": "早安",
+  "transistor": "電晶體",
+  "instant coffee": "即溶咖啡",
 }
 
 words = DB[:words]
