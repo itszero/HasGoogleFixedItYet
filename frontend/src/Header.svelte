@@ -103,7 +103,9 @@
     .hero {
       border: 1px solid #000;
       box-shadow: 0 10px 10px #555;
+      background-color: #1a67d2;
       margin-bottom: 10px;
+      color: white;
     }
 
     .icon_to {

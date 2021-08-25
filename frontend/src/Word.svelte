@@ -43,7 +43,7 @@
       <table>
         <thead>
           <tr>
-            <td>Google 翻譯結果</td><td>第一次看到</td><td>最後一次看到</td>
+            <th>Google 翻譯結果</th><th>第一次看到</th><th>最後一次看到</th>
           </tr>
         </thead>
         <tbody>
@@ -128,11 +128,31 @@
     margin-top: 20px;
   }
 
-  .history td {
+  .history table {
+    width: 100%;
+  }
+
+  .history thead th {
+    color: #1a67d2;
+    border-bottom: 1px solid #1a67d2;
+  }
+
+  .history td,
+  .history th {
     padding: 5px 10px;
   }
 
   .history tr td:first-of-type {
     padding-left: 0;
+  }
+
+  .history tr th,
+  .history tr td {
+    text-align: center;
+  }
+
+  .history tr th:first-of-type,
+  .history tr td:first-of-type {
+    text-align: left;
   }
 </style>
