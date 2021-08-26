@@ -11,6 +11,10 @@ class HasGoogleFixedItYet < Sinatra::Base
     send_file File.expand_path('index.html', settings.public_folder)
   end
 
+  get '/reportList' do
+    send_file File.expand_path('index.html', settings.public_folder)
+  end
+
   get '/i/data' do
     settings.db["""
 SELECT
