@@ -1,10 +1,3 @@
-<script>
-  export let words
-
-  $: fixedCount = (words || []).filter((word) => word.is_fixed).length
-  $: totalCount = (words || []).length
-</script>
-
 <div class="header_bg" />
 
 <div class="header">
@@ -20,16 +13,6 @@
   </table>
 
   <div class="icon_to">↓</div>
-
-  <div class="answer">
-    {#if words}
-      {#if fixedCount < totalCount}
-        還沒。😥 <span class="answer_note">({fixedCount} / {totalCount})</span>
-      {:else}
-        全部修好了！🎉🎉🎉
-      {/if}
-    {/if}
-  </div>
 </div>
 
 <style>
@@ -58,16 +41,6 @@
 
   .title_en {
     font-size: 15pt;
-  }
-
-  .answer {
-    padding: 20px 0;
-    font-size: 4em;
-    font-weight: 900;
-  }
-
-  .answer_note {
-    font-size: 0.5em;
   }
 
   table {
@@ -126,10 +99,6 @@
 
     .title_en {
       font-size: 12pt;
-    }
-
-    .answer_note {
-      display: block;
     }
 
     table td {
