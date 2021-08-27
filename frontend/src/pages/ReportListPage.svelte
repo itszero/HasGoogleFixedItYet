@@ -37,8 +37,21 @@
       copied = false
     }, 2000)
 
+    gtag('event', 'copyAll', {
+      source: 'reportList',
+    })
+
     e.preventDefault()
     e.stopPropagation()
+  }
+
+  function getDidClickReport(word) {
+    return function () {
+      gtag('event', 'report', {
+        source: 'reportList',
+        word,
+      })
+    }
   }
 </script>
 
@@ -78,7 +91,9 @@
               {word['english_word']}
               <a
                 href={getGoogleTranslateLink(word['english_word'])}
-                target="_blank">✏️  回報錯誤</a>
+                on:click={getDidClickReport(word['english_word'])}
+                target="_blank">✏️ {' '}回報錯誤</a
+              >
             </div>
             <div class="wrong-word">❌ {word['zhtw_word']}</div>
             <div class="right-word">✅ {word['correct_zhtw_word']}</div>
