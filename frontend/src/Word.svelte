@@ -32,7 +32,7 @@
 >
   <div class="summary">
     <div class="main">
-      {word.is_fixed ? '✅' : '🚫'}
+      {word.is_fixed ? '✅' : '❌'}
       {word['english_word']} → {word['zhtw_word']}
       {#if !word.is_fixed}({word['correct_zhtw_word']}){/if}
     </div>
