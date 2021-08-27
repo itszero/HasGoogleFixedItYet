@@ -74,12 +74,14 @@
       {#each data as word}
         {#if !word.is_fixed}
           <div class="word">
-            {word['english_word']}
-            <a
-              href={getGoogleTranslateLink(word['english_word'])}
-              target="_blank">✏️ 開始編輯</a
-            ><br />
-            ❌ {word['zhtw_word']} ✅ {word['correct_zhtw_word']}
+            <div>
+              {word['english_word']}
+              <a
+                href={getGoogleTranslateLink(word['english_word'])}
+                target="_blank">✏️  回報錯誤</a>
+            </div>
+            <div class="wrong-word">❌ {word['zhtw_word']}</div>
+            <div class="right-word">✅ {word['correct_zhtw_word']}</div>
           </div>
         {/if}
       {/each}
@@ -109,5 +111,20 @@
 
   .copy-action {
     margin: 10px 0;
+  }
+
+  .wrong-word {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .right-word {
+    display: inline-block;
+  }
+
+  @media (max-width: 600px) {
+    .wrong-word {
+      display: none;
+    }
   }
 </style>
