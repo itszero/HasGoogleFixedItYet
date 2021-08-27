@@ -38,7 +38,7 @@
     }, 2000)
 
     gtag('event', 'copyAll', {
-      source: 'reportList',
+      event_category: 'reportList',
     })
 
     e.preventDefault()
@@ -48,8 +48,8 @@
   function getDidClickReport(word) {
     return function () {
       gtag('event', 'report', {
-        source: 'reportList',
-        word,
+        event_category: 'reportList',
+        event_label: word,
       })
     }
   }
