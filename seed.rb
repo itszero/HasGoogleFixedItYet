@@ -56,6 +56,9 @@ WORDS = {
   "instant coffee": "即溶咖啡",
   "Fed": "聯準會",
   "P/E ratio": "本益比",
+  "earthquake magnitude": "地震規模",
+  "earthquake intensity": "地震震度",
+  "mantle": "地函",
 }
 
 words = DB[:words]
