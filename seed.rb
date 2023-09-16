@@ -59,6 +59,16 @@ WORDS = {
   "earthquake magnitude": "地震規模",
   "earthquake intensity": "地震震度",
   "mantle": "地函",
+  "RAM": "記憶體",
+  "virtual memory": "虛擬記憶體",
+  "virtual server": "虛擬伺服器",
+  "shared server": "共享伺服器",
+  "regular file": "普通檔案",
+  "file system": "檔案系統",
+  "filename": "檔案名稱",
+  "file size" "檔案大小",
+  "strings": "字串",
+  "memory management": "記憶體管理",
   "operations": "營運",
   "optimization": "最佳化"
 }
