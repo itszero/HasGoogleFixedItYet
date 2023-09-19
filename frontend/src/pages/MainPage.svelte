@@ -21,14 +21,19 @@
     e.stopPropagation()
     return false
   }
+
+  let fixedPercentage
+  $: fixedPercentage = fixedCount / totalCount
 </script>
 
 <div class="answer">
   {#if data}
-    {#if fixedCount < totalCount}
+    {#if fixedPercentage < 0.5}
       還沒。😥 <span class="answer_note">({fixedCount} / {totalCount})</span>
+    {:else if fixedPercentage < 1.0}
+      修了很多！ 😄 <span class="answer_note">({fixedCount} / {totalCount})</span>
     {:else}
-      全部修好了！🎉🎉🎉
+      全部修好了！ 🥰
     {/if}
   {/if}
 </div>
