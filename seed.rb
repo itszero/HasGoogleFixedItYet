@@ -69,6 +69,7 @@ WORDS = {
   "file size" "檔案大小",
   "strings": "字串",
   "memory management": "記憶體管理",
+  "macro": "巨集",
   "operations": "營運",
   "optimization": "最佳化"
 }
