@@ -60,7 +60,8 @@ WORDS = {
   "earthquake intensity": "地震震度",
   "mantle": "地函",
   "operations": "營運",
-  "optimization": "最佳化"
+  "optimization": "最佳化",
+  "disable": "停用"
 }
 
 words = DB[:words]
