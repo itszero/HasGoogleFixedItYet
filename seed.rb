@@ -22,7 +22,7 @@ WORDS = {
   "compatibility": "相容性",
   "information": "資訊",
   "database": "資料庫",
-  "digital": "數位",
+  "digital": "數位,數位的",
   "server": "伺服器",
   "AI": "人工智慧",
   "rapper": "饒舌歌手",
@@ -45,7 +45,7 @@ WORDS = {
   "laptop": "筆記型電腦",
   "pineapple": "鳳梨",
   "text": "文字",
-  "billiards": "撞球",
+  "billiards": "撞球,英式撞球",
   "protocol": "協定",
   "roller coaster": "雲霄飛車",
   "through": "透過",
@@ -75,7 +75,7 @@ WORDS.each do |english_word, correct_zhtw_word|
     })
   else
     puts "updating #{english_word}..."
-    words.where({:english_word => english_word}).update({ correct_zhtw_word: correct_zhtw_word })
+    words.where({ :english_word => english_word }).update({ correct_zhtw_word: correct_zhtw_word })
   end
 end
 
