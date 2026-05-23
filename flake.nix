@@ -18,9 +18,7 @@
       mkPackages =
         pkgs:
         let
-          # Pin to ruby 3.3 — the Gemfile.lock predates 3.4, which drops
-          # base64/bigdecimal from default gems and breaks `http` and `sequel`.
-          ruby = pkgs.ruby_3_3;
+          ruby = pkgs.ruby_3_4;
 
           gems = pkgs.bundlerEnv {
             name = "hgfiy-gems";
